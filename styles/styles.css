@@ -45,7 +45,7 @@ h6 {
 
 p {
 	line-height: 1.5;
-  
+
 }
 
 
@@ -113,9 +113,17 @@ a:active {
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 64px 84px 1fr 1fr 1fr 43px;
+  grid-template-rows: 64px 1fr 1fr 1fr 1fr 43px;
   grid-template-areas: 
-  "logo " ;
+  "logo . . . . navMenu"
+  ". . spain spain . ." 
+  ". quote . video1 . ."
+  ". quote . video2 . ."
+  ". quote . video3 . ."
+  ". . cw cw . . ";
+
+
+  
 }
 
 
