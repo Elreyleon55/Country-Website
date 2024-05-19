@@ -24,18 +24,33 @@
     />
   </head>
   <body class="site-main">
-    <div class="grid-layout">
-      <header>
+    <div class="grid-map">
+      <header class="main-header">
         <a href="index.html" class="site-logo">
           <img
+            class="site-logo2"
             src="images/Website Logo-1.svg"
             alt="Logo of sun with the spanish colours"
         /></a>
         <h2></h2>
 
         <nav class="main-navigation">
-          <button id="main-navigation-button">Menu</button>
-          <ul id="main-navigation-list">
+          <button class="navigation-button" id="main-navigation-button">
+            <svg
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>menu icon</title>
+              <path
+                d="m16.5 11.995c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25zm-6.75 0c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25zm-6.75 0c0-1.242 1.008-2.25 2.25-2.25s2.25 1.008 2.25 2.25-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25z"
+              />
+            </svg>
+          </button>
+          <ul class="main-navigation-list" id="main-navigation-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="culture.html">Culture</a></li>
             <li><a href="explore.html">Explore</a></li>
@@ -43,22 +58,42 @@
         </nav>
       </header>
       <main>
-        <section class="country">
-          <header>
+        <section class="video-content">
+          <video
+            autoplay
+            loop
+            controls
+            class="granada-video"
+            src="media/Granada-compressed.mp4"
+          ></video>
+          
+          <div class="content">
             <h1>Spain</h1>
-          </header>
-          <quote>
-            <h2>
-              "Vivo Por Esos Momentos Que Duran Cinco Minutos Pero Sienten Como
-              Una Vida Entera"
-            </h2>
-          </quote>
+            <p> "Vivo Por Esos Momentos Que Duran Cinco Minutos Pero Sienten
+              Como Una Vida Entera"</p>
+          </div>
         </section>
+
+
+          <section class="country">
+            <div class="country1">
+              <header>
+                <h1 class="spain-tittle">Spain</h1>
+              </header>
+              <quote class="main-quote">
+              </quote>
+            </div>
+          <section>
 
         <section class="media">
           <article>
-            <video src="media/Granada-compressed.mp4"></video>
-            <video src="media/Ibiza-compressed.mp4"></video>
+            <video
+              autoplay
+              loop
+              controls
+              class="ibiza-video"
+              src="media/Ibiza-compressed.mp4"
+            ></video>
           </article>
         </section>
 

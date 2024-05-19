@@ -74,14 +74,13 @@ table {
 #main-navigation-list {
   height: 0;
   overflow: hidden;
-  transition: 3s ease; 
+  transition: 0.7s ease; 
 }
 
 #main-navigation-list.toggled {
-
-  height: 50vh;
-
+  height: 20vh;
 }
+
 
 /* Links
 --------------------------------------------- */
@@ -110,30 +109,133 @@ a:active {
 # Layout
 --------------------------------------------------------------*/
 
-.grid-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 64px 1fr 1fr 1fr 1fr 43px;
-  grid-template-areas: 
-  "logo . . . . navMenu"
-  ". . spain spain . ." 
-  ". quote . video1 . ."
-  ". quote . video2 . ."
-  ". quote . video3 . ."
-  ". . cw cw . . ";
+/* @media screen and (min-width: 20em){
 
 
+  .grid-map {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 64px auto auto auto 60px;
+    grid-template-areas: 
+    "logo . navMenu"
+    ". spain ." 
+    "quote video1 ."
+    "quote video2 ."
+    "quote video1 ."
+    ". cw .";
+  }
   
-}
+  .grid-map .site-logo2 {
+    grid-area: logo;
+  }
+  
+  .grid-map .main-navigation {
+    grid-area: navMenu;
+  }
+
+  .grid-map .spain-tittle {
+    grid-area: spain;
+  }
+  
+  .grid-map .main-quote {
+    grid-area: quote;
+  }
+  
+  .grid-map .granada-video {
+    grid-area: video1;
+  }
+
+  .grid-map .ibiza-video {
+    grid-area: video2;
+  }
+
+  .grid-map .ibiza-video {
+    grid-area: video1;
+  }
+
+  .grid-map .footer {
+    grid-area: cw;
+  }
+
+
+}  */
+  
+
+
 
 
 
 /*--------------------------------------------------------------
-# Components
+# Component
 --------------------------------------------------------------*/
+
+.navigation-button {
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+}
+
+.main-navigation-list {
+position: absolute;
+left: 0;
+right: 0;
+text-decoration: none;
+background-color: rgb(184, 56, 56);
+}
+.main-navigation-list a {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 2;
+}
+
+
+.video-content {
+  position: relative;
+}
+
+
+.content {
+  position: absolute;
+  bottom: 0;
+  color: aliceblue;
+  background: rgba(0, 0, 0, 0.4);
+  height: 160px;
+  padding: 2%;
+}
+
+.content h1 {
+  margin-top: 1%;
+}
+
+
+
+
+
+
+
+
 
 /* Header
 --------------------------------------------- */
+.main-header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ top: 0;
+ left: 0;
+ right: 0;
+ z-index: 10;
+ position: relative;
+ height: 64px;
+ 
+}
+
+.site-logo {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 5px;
+}
+  
 
 
 /* Main
