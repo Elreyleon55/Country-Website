@@ -256,7 +256,7 @@ padding: 0;
 .content h1 {
   font-size: 4.3rem;
   font-weight: 600;
-  color: brown;
+  color: red;
   transition: 0,5s;
 }
 .content h1:hover {
@@ -365,11 +365,10 @@ color: transparent;
 }
 
 .lord-icon{
-  display: flex;
-  position: absolute;
-  left: 150px;
-  top: 30px;
-  transform: rotateX(180deg);
+  display: block;
+  margin: 0 auto;
+  height: 4rem;
+  width: 4rem;
   
 }
 
@@ -478,11 +477,47 @@ figcaption {
 }
 
 @media(min-width: 28.0em) {
+
+    .main-quote p {
+      font-size: 20px;
+    }
+
   .granada-video{
     padding: 0 18%;
     border-radius: 25%;
   filter: drop-shadow(0 0 0.75rem rgb(190, 119, 134));
   }
+  figcaption {
+    font-size: 10%;
+  }
+
+  .second-navigation {
+    padding: 0 13%;
+  }
+
+  .second-navigation a{
+    font-size: 23px;
+  }
+}
+
+@media(min-width: 73em){
+  .video-quote-section{
+    white-space: break-spaces;
+  }
+  figcaption {
+    font-size: medium;
+    margin-top: -2%;
+
+  }
+
+  .discouver {
+    padding-top: 25%;
+  }
+
+  .second-navigation {
+    padding-top: 20%;
+  }
+
 }
 
 
@@ -499,4 +534,14 @@ figcaption {
   margin-top: 0;
   text-align: center;
   padding-top: 40px;
+}
+
+
+@media(min-width: 73em){
+  .main-page-footer {
+    height: 70vh;
+  }
+  .main-page-footer p {
+    padding-top: 43%;
+  }
 }
