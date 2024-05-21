@@ -48,6 +48,8 @@ p {
 
 }
 
+.culture
+
 
 /* Elements
 --------------------------------------------- */
@@ -198,12 +200,14 @@ padding: 0;
 }
 .main-navigation-list li {
   padding-top: 11px;
+  
 }
 
 .main-navigation-list a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   line-height: 2;
+  display: block;
   
 }
 
