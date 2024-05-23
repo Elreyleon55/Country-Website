@@ -48,8 +48,6 @@ p {
 
 }
 
-.culture
-
 
 /* Elements
 --------------------------------------------- */
@@ -170,6 +168,20 @@ a:active {
 /*--------------------------------------------------------------
 # Component
 --------------------------------------------------------------*/
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 
 .navigation-button {
   width: 3rem;
@@ -352,6 +364,28 @@ color: transparent;
 } */
 
 
+
+/* This is for my culture hmtl header*/
+
+.header-culture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  padding: 0 5%;
+  align-items: center;
+  justify-content: center;
+ 
+ }
+
+
 /* Main
 --------------------------------------------- */
 
@@ -384,6 +418,10 @@ color: transparent;
   font-style: normal;
   text-align: center;
   padding: 0 20px;
+}
+
+.blockquote footer cite {
+  font-size: 5%;
 }
 
 .granada-video{
@@ -524,6 +562,74 @@ figcaption {
 
 }
 
+/* This is for the culture main */
+.culture {
+  width: 100%;
+  height: 150vh;
+  background-image: linear-gradient(rgba(112, 101, 161, 0.3),rgba(148, 109, 47, 0.3));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  position: relative;
+  object-fit: cover;
+  padding-top: 10%;
+}
+.culture .artquitecture-section h2 {
+  text-align: center;
+}
+.culture img {
+  display: block;
+  margin-top: 10%;
+  
+}
+.culture .second-p {
+  padding-top: 5%;
+}
+.culture figcaption {
+  font-size: 10px;
+}
+.culture p {
+  text-align: left;
+  padding: 0 10%;
+}
+
+@media(min-width:25.5em ) {
+  .culture img {
+    width: 60%;
+  margin: 0 auto;
+  padding-top: 10%;
+  }
+}
+@media(min-width:34em) {
+  .culture p {
+ font-size: 23px;
+  }
+  .culture {
+    height: 200vh;
+  }
+
+.culture .artquitecture-section h2 {
+  font-size: 35px;
+
+}
+
+.culture figcaption {
+  font-size: 15px;
+}
+}
+@media (min-width: 49em){
+  .culture figure {
+    display: flex;
+    align-items: baseline;
+    
+  }
+  .culture figure img{
+    width:80%;
+    margin: 0 auto;
+  }
+  
+}
 
 /* Footer
 --------------------------------------------- */
@@ -548,4 +654,17 @@ figcaption {
   .main-page-footer p {
     padding-top: 43%;
   }
+}
+
+/* This is for the culture footer */
+
+.main-page-footer-culture {
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(rgba(216, 57, 32, 0.3),rgba(228, 43, 15, 0.856));
+}
+.main-page-footer-culture p {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 40px;
 }
