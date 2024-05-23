@@ -575,6 +575,13 @@ figcaption {
   object-fit: cover;
   padding-top: 10%;
 }
+
+.artchitecture h1 {
+  font-size: 30px;
+}
+.culture h1{
+  font-size: 20px;
+}
 .culture .artquitecture-section h2 {
   text-align: center;
 }
