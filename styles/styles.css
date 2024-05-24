@@ -388,7 +388,7 @@ color: transparent;
 
 /* Main
 --------------------------------------------- */
-
+/* This is for the main */
 .video-quote-section{
   width: 100%;
   height: 100vh;
@@ -632,6 +632,98 @@ figcaption {
     
   }
   .culture figure img{
+    width:80%;
+    margin: 0 auto;
+  }
+  
+}
+
+/* this is for the explore page */
+
+.explore-section {
+  width: 100%;
+  height: 400vh;
+  background-image: linear-gradient(rgba(112, 101, 161, 0.3),rgba(148, 109, 47, 0.3));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  position: relative;
+  object-fit: cover;
+  padding-top: 10%;
+}
+
+.explore-section h1 {
+  font-size: 30px;
+}
+.explore-spain h1{
+  font-size: 20px;
+}
+.explore-spain .explore-section h2 {
+  text-align: center;
+}
+.explore-spain img {
+  display: block;
+  margin-top: 10%;
+  
+}
+.explore-spain .second-p {
+  padding-top: 5%;
+}
+.explore-spain figcaption {
+  font-size: 10px;
+}
+.explore-spain p {
+  text-align: left;
+  padding: 0 10%;
+}
+
+
+/* this is the css for the cards inside explore/why not galicia */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 0 1 calc(15% - 1em);
+}
+
+
+
+@media(min-width:25.5em ) {
+  .explore-spain img {
+    width: 60%;
+  margin: 0 auto;
+  padding-top: 10%;
+  }
+}
+@media(min-width:34em) {
+  .explore-spain p {
+ font-size: 23px;
+  }
+  .explore-spain {
+    height: 200vh;
+  }
+
+.explore-spain .explore-section h2 {
+  font-size: 35px;
+
+}
+
+.explore-spain figcaption {
+  font-size: 15px;
+}
+}
+@media (min-width: 49em){
+  .explore-spain figure {
+    display: flex;
+    align-items: baseline;
+    
+  }
+  .explore-spain figure img{
     width:80%;
     margin: 0 auto;
   }
