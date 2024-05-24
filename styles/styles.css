@@ -638,6 +638,18 @@ figcaption {
   
 }
 
+/* This is for my credits page */
+.credits-page{
+  width: 100%;
+  height: 200vh;
+  background-image: linear-gradient(rgba(112, 101, 161, 0.3),rgba(148, 109, 47, 0.3));
+  align-items: center;
+  position: relative;
+  object-fit: cover;
+  padding-top: 10%;
+}
+
+
 /* Footer
 --------------------------------------------- */
 
