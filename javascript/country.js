@@ -43,4 +43,3 @@ viaContact.forEach(function(action){
     
 })
 
-// ^^^figure outlater
