@@ -82,30 +82,37 @@ table {
 }
 
 #main-navigation-list.toggled {
-  height: 20vh;
+  height: 216px;
 }
 
 
 /* Links
 --------------------------------------------- */
 a {
-	
+	color: rgb(0, 0, 0);
 }
 
 a:visited {
-	
+	color: transparent;
 }
 
 a:hover {
-	
+	color: rgb(254, 254, 22);
+  cursor: pointer;
 }
 
 a:focus {
-	
+	text-decoration: underline;
+
 }
 
 a:active {
-	
+	color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.explore-hover:hover {
+background-color: #f52201;
 }
 
 
@@ -209,7 +216,11 @@ list-style: none;
 display: inline-block;
 text-align: center;
 padding: 0;
+font-weight: 700;
+font-size: 20px;
 }
+
+
 
 .main-navigation-list {
   text-align: center;
@@ -422,6 +433,7 @@ color: transparent;
   font-style: normal;
   text-align: center;
   padding: 0 20px;
+  
 } 
 
 .blockquote footer cite {
@@ -447,6 +459,7 @@ figcaption {
 .path-quote{
   display: block;
 }
+
 
 /* second section second navigation */
 /* I have no idea why it does not work... */
@@ -526,13 +539,13 @@ figcaption {
 @media(min-width: 28.0em) {
 
     .main-quote p {
-      font-size: 20px;
+      font-size: 222%;
     }
 
   .granada-video{
     padding: 0 18%;
     border-radius: 25%;
-  filter: drop-shadow(0 0 0.75rem rgb(190, 119, 134));
+    filter: drop-shadow(0 0 0.75rem rgb(190, 119, 134));
   }
   figcaption {
     font-size: 10%;
@@ -548,13 +561,12 @@ figcaption {
 }
 
 @media(min-width: 73em){
-  .video-quote-section{
+  /* .video-quote-section{
     white-space: break-spaces;
-  }
+  } */
   figcaption {
     font-size: medium;
     margin-top: -2%;
-
   }
 
   .discouver {
@@ -563,6 +575,19 @@ figcaption {
 
   .second-navigation {
     padding-top: 20%;
+   
+  }
+
+  .second-navigation a {
+    font-size: 50px;
+  }
+
+  .grid.map2 {
+    width: 30%;
+  }
+
+  .video-quote-section {
+    white-space: break-spaces;
   }
 
 }
@@ -639,6 +664,9 @@ figcaption {
   .culture figure img{
     width:80%;
     margin: 0 auto;
+  }
+  .culture .img-tortilla {
+    
   }
   
 }
