@@ -606,8 +606,11 @@ figcaption {
   padding-top: 10%;
 }
 
-.artchitecture h1 {
-  font-size: 30px;
+ .artchitecture h1 {
+  font-size: 2px;
+}
+.content .main-h1{
+  font-size: 1rem;
 }
 .culture h1{
   font-size: 20px;
@@ -631,12 +634,18 @@ figcaption {
   padding: 0 10%;
 }
 
+
+
 @media(min-width:25.5em ) {
   .culture img {
     width: 60%;
   margin: 0 auto;
   padding-top: 10%;
   }
+  .content .main-h1{
+    font-size: 3rem;
+  }
+
 }
 @media(min-width:34em) {
   .culture p {
@@ -650,6 +659,7 @@ figcaption {
   font-size: 35px;
 
 }
+
 
 .culture figcaption {
   font-size: 15px;
