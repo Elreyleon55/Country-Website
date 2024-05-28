@@ -69,9 +69,86 @@ figure {
 	
 }
 
-table {
-	
-}
+.style-table h3 {
+  text-align: center;
+  
+  }
+  
+  .style-table h2 {
+   text-decoration: underline;
+  }
+  
+  .do-not-center {
+    text-align: left;
+  }
+  .style-table {
+    align-content: center;
+    padding: 0 5%;
+  }
+  
+  .style-table table {
+    margin-left: auto; margin-right: auto
+  }
+  
+  .table-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .epic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .epic-table th, .epic-table td {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .epic-table th {
+    background-color: #ff2f00;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .epic-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .epic-table tbody tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .epic-table th, .epic-table td {
+    position: relative;
+  }
+  
+  .epic-table th::before, .epic-table td::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f52201;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .epic-table th:hover::before, .epic-table td:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
 #main-navigation-list {
   height: 0;
@@ -809,86 +886,6 @@ th, td {
   border: 1px solid black;
 }
 
-.style-table h3 {
-text-align: center;
-
-}
-
-.style-table h2 {
- text-decoration: underline;
-}
-
-.do-not-center {
-  text-align: left;
-}
-.style-table {
-  align-content: center;
-  padding: 0 5%;
-}
-
-.style-table table {
-  margin-left: auto; margin-right: auto
-}
-
-.table-container {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;
-}
-
-.epic-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 0 auto;
-  font-size: 18px;
-  text-align: left;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.epic-table th, .epic-table td {
-  padding: 15px;
-  border-bottom: 1px solid #dddddd;
-}
-
-.epic-table th {
-  background-color: #ff2f00;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.epic-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.epic-table tbody tr:hover {
-  background-color: #ddd;
-  cursor: pointer;
-}
-
-.epic-table th, .epic-table td {
-  position: relative;
-}
-
-.epic-table th::before, .epic-table td::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #f52201;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.epic-table th:hover::before, .epic-table td:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 /* Footer
 --------------------------------------------- */
